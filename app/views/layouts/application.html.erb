@@ -7,8 +7,10 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="main_area">
+  <%= render :partial => 'layouts/header' %>
+  <%= yield %>
+  <%= render :partial => 'layouts/footer' %>
+</div>
 </body>
 </html>

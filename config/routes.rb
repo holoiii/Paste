@@ -1,4 +1,6 @@
 Paste::Application.routes.draw do
+  resources :text_pastes
+  root :to => "text_pastes#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

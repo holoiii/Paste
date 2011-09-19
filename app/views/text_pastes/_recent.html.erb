@@ -1,0 +1,9 @@
+<div class="recent_pastes">
+  Recent Pastes
+  <% @recent_pastes.each do |paste| %>
+      <div class="ind_paste">
+        <%= "#{paste.id}." %>
+        <%= link_to paste.text, text_paste_path(paste.id) %>
+      </div>
+  <% end %>
+</div>

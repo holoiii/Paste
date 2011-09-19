@@ -1,0 +1,2 @@
+module TextPastesHelper
+end

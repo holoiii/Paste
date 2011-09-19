@@ -1,0 +1,30 @@
+.main_area {
+    text-align: center;
+}
+
+.header {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.footer {
+    font-size: 8px;
+}
+
+.paste_area {
+    display: inline-block;
+}
+
+.recent_pastes {
+    display: inline-block;
+}
+
+.ind_paste {
+    text-align: left;
+}
+
+.flash {
+    color: #8a2be2;
+    font-size: 15px;
+    line-height: 15px;
+}
