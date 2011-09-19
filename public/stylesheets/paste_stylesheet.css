@@ -1,5 +1,5 @@
 .main_area {
-    width: 505px;
+    width: 525px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,11 +12,13 @@
     font-size: 50px;
     line-height: 60px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .footer {
     font-size: 8px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .paste_area {
@@ -28,7 +30,7 @@
 .paste_show {
     display: block;
     border: 3px solid gray;
-    height: 380px;
+    height: 360px;
     padding: 5px 5px 5px 5px;
 }
 
@@ -40,7 +42,7 @@
 .recent_pastes {
     display: inline-block;
     vertical-align: top;
-    width: 100px;
+    width: 120px;
 }
 
 .ind_paste {
