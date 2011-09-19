@@ -1,9 +1,9 @@
 <div class="recent_pastes">
   Recent Pastes
-  <% @recent_pastes.each do |paste| %>
+  <% @recent_pastes.each_with_index do |paste, id| %>
       <div class="ind_paste">
-        <%= "#{paste.id}." %>
-        <%= link_to paste.text, text_paste_path(paste.id) %>
+        <%= "#{id + 1}." %>
+        <%= link_to shorten(paste.text, 10), text_paste_path(paste.id) %>
       </div>
   <% end %>
 </div>

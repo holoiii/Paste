@@ -1,8 +1,15 @@
-
+<div class="paste_url">
+  <%= "Link: #{text_paste_url(@text_paste)}" %>
+</div>
 
 <div class="content_area">
   <div class="paste_area">
-    <%= @text_paste.text %>
+    <div class="paste_show">
+      <%= @text_paste.text %>
+    </div>
+    <div class="new_paste_link">
+      <%= link_to 'New Paste', text_pastes_path %>
+    </div>
   </div>
   <%= render 'recent' %>
 </div>

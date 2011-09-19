@@ -1,22 +1,46 @@
 .main_area {
-    text-align: center;
+    width: 505px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_area {
+    display: block;
 }
 
 .header {
     font-size: 50px;
     line-height: 60px;
+    text-align: center;
 }
 
 .footer {
     font-size: 8px;
+    text-align: center;
 }
 
 .paste_area {
     display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+
+.paste_show {
+    display: block;
+    border: 3px solid gray;
+    height: 380px;
+    padding: 5px 5px 5px 5px;
+}
+
+.new_paste_link {
+    display: block;
+    text-align: center;
 }
 
 .recent_pastes {
     display: inline-block;
+    vertical-align: top;
+    width: 100px;
 }
 
 .ind_paste {
@@ -27,4 +51,13 @@
     color: #8a2be2;
     font-size: 15px;
     line-height: 15px;
+}
+
+.submit_paste {
+    text-align: center;
+}
+
+.paste_url {
+    text-align: center;
+    margin-bottom: 7px;
 }
