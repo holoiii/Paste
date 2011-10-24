@@ -1,6 +1,7 @@
 Paste::Application.routes.draw do
   resources :text_pastes
   root :to => "text_pastes#index"
+  match "/:id" => "text_pastes#show", :constraints => {:id => /\d*/}
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
