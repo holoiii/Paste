@@ -3,7 +3,7 @@
   <% @recent_pastes.each_with_index do |paste, id| %>
       <div class="ind_paste">
         <%= "#{id + 1}." %>
-        <%= link_to shorten(paste.text, 10), text_paste_path(paste.id) %>
+        <%= link_to shorten(paste.text, 10), root_url + (paste.to_param) %>
       </div>
   <% end %>
 </div>

@@ -20,7 +20,7 @@ class TextPastesController < ApplicationController
     if @text_paste.save
       flash[:notice] = 'Paste successfully saved!'
       @recent_pastes = TextPaste.latest(20)
-      render "show"
+      redirect_to root_url + @text_paste.to_param
     else
       flash[:notice] = 'Error, paste not saved!'
       render 'index'
